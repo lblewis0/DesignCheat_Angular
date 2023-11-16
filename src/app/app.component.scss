@@ -10,7 +10,7 @@ $vl-sb-f-div-height: 30px; //footer-height
 
 .vl-sb-div
 {
-    height: 100%;
+    height: $vl-sb-div-height;
     width: $vl-sb-div-width;
     border: 1px solid $light-font-color-medium-emphasis;
     display: flex;
@@ -29,7 +29,6 @@ $vl-sb-f-div-height: 30px; //footer-height
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // border-bottom: 1px solid $light-font-color-medium-emphasis;
 }
 
 .vl-sb-c-div
@@ -54,7 +53,6 @@ $vl-sb-f-div-height: 30px; //footer-height
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // border-top: 1px solid $light-font-color-medium-emphasis;
 }
 
 //VerticalLayout-List-Div-----------------------------------------------------------------------------------

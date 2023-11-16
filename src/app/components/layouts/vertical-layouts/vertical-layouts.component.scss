@@ -21,7 +21,7 @@ $c-main-div-padding: 15px;
     justify-content: flex-start;
     align-items: center;
     padding: $c-main-div-padding;
-
+    gap: 20px;
 }
 
 .chapter-div
@@ -31,51 +31,212 @@ $c-main-div-padding: 15px;
     width: 600px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
-    border: 1px solid lightgrey;
+    border: 1px solid $light-font-color-medium-emphasis;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .chapter-tt
 {
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
     margin: 0px;
+    font-size: 20px;
 }
 
 .chapter-ct
 {
-    border: 1px solid red;
+    // border: 1px solid red;
     margin: 0px;
+    font-size: 16px;
 }
 
 .chapter-ex
 {
-    height: fit-content;
+    height: 200px;
     padding: 20px;
     width: calc(100% - 40px);
     border-radius: 10px;
-    border: 1px solid green;
 }
 
 .chapter-cd
 {
     height: fit-content;
-    width: 100%;
-    border: 1px solid blue;
+    width: calc(100% - 40px);
+    // border: 1px solid blue;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
+.chapter-cd-title-div
+{
+    width: calc(100% - 20px);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid red;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.copy-button
+{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-theme-03;
+    fill: $light-font-color-medium-emphasis;
+    padding: 0px;
+    cursor: pointer;
+    border: 0px solid $light-font-color-medium-emphasis;
+}
+
+.copy-button:hover
+{
+    fill: $light-font-color-high-emphasis;
+}
+
+.copy-button:active
+{
+    fill: $light-font-color-high-emphasis;
+}
+
+.copy-button-i
+{
+    height: 100%;
+    width: 100%;
+}
+
+#vl-sb-chapter-cd-01
+{
+    border-radius: 10px;
+}
+
+#vl-sb-chapter-cd-02
+{
+    border-radius: 10px;
+}
+
+.code-content
+{
+    // border: 1px solid orangered;
+    width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    gap: 0px;
+}
+
+.pre-code
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    padding: 0px;
+}
+
+.language-html
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    padding: 0px;
+
+}
+
+.line-00
+{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.line-01
+{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.cl //content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .fhe //command line
+    {
+        color: $light-font-color-high-emphasis;
+    }
+
+    .fme // </>=
+    {
+        color: $light-font-color-medium-emphasis;
+    }
+
+    .lb //class
+    {
+        color: #6eafd6;
+    }
+
+    .db //div
+    {
+        color: #205391;
+    }
+
+    .o //class name
+    {
+        color: #a05337;
+    }
+
+    .y //class name
+    {
+        color: #d6983d;
+    }
+
+    .g
+    {
+        color: #b4c379;
+    }
+
+}
 
 //Models----------------------------------------------------------------------------------------------------
-$vl-st-div-height: 100%;
-$vl-st-div-width: 100%;
-$vl-st-h-div-height: 30px;
-$vl-st-f-div-height: 30px;
+//VerticalLayout-StatusBar-Div------------------------------------------------------------------------------
+$vl-sb-div-height: 100%;
+$vl-sb-div-width: 100%;
+$vl-sb-h-div-height: 30px; //verticalLayout_statusBar_header-height
+$vl-sb-f-div-height: 30px; //footer-height
 
-.vl-st-div
+.vl-sb-div
 {
-    height: 200px;
-    width: $vl-st-div-width;
+    height: $vl-sb-div-height;
+    width: $vl-sb-div-width;
     border: 1px solid $light-font-color-medium-emphasis;
     display: flex;
     flex-direction: column;
@@ -84,19 +245,18 @@ $vl-st-f-div-height: 30px;
     gap: 0px;
 }
 
-.vl-st-h-div
+.vl-sb-h-div
 {   
-    height: $vl-st-h-div-height;
+    height: $vl-sb-h-div-height;
     width: 100%;
-    background-color: $dark-theme-03;
+    background-color: $dark-theme-05;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid $light-font-color-medium-emphasis;
 }
 
-.vl-st-c-div
+.vl-sb-c-div
 {
     width: 100%;
     background-color: $dark-theme-00;
@@ -105,16 +265,17 @@ $vl-st-f-div-height: 30px;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-.vl-st-f-div
+.vl-sb-f-div
 {
-    height: $vl-st-f-div-height;
+    min-height: $vl-sb-f-div-height;
     width: 100%;
-    background-color: $dark-theme-03;
+    background-color: $dark-theme-05;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid $light-font-color-medium-emphasis;
 }

@@ -1,22 +1,355 @@
 <div class="c-main-div">
     <div class="chapter-div">
         <h1 class="chapter-tt">Status bars layout</h1>
-        <p class="chapter-ct">Basic layout for status bar with center content ajust</p>
+        <p class="chapter-ct">Basic layout for status bars with center content ajust</p>
         <div class="chapter-ex">
-            <div class="vl-st-div">
-                <div class="vl-st-h-div">Header</div>
-                <div class="vl-st-c-div">Content</div>
-                <div class="vl-st-f-div">Footer</div>
+            <div class="vl-sb-div">
+                <div class="vl-sb-h-div">Header</div>
+                <div class="vl-sb-c-div">Content</div>
+                <div class="vl-sb-f-div">Footer</div>
             </div>
         </div>
         <div class="chapter-cd">
-            <div class="vl-st-div">
-                <div class="vl-st-h-div">.html</div>
-                <div class="vl-st-c-div">Content</div>
+            <div id="vl-sb-chapter-cd-01" class="vl-sb-div">
+                <div class="vl-sb-h-div">
+                    <div class="chapter-cd-title-div">
+                        <label class="chapter-cd-title-label">.html</label>
+                        <button id="copy-01" 
+                                class="copy-button" 
+                                (click)="getCode('vl-sb-div-code-html','copy-01')"
+                                title={{toopTipCopy}}>
+                            <svg class="copy-button-i"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 -960 960 960">
+                                 @if(!buttonsCodes['copy-01'])
+                                 {
+                                    <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h167q11-35 43-57.5t70-22.5q40 0 71.5 22.5T594-840h166q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560h-80v120H280v-120h-80v560Zm280-560q17 0 28.5-11.5T520-800q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800q0 17 11.5 28.5T480-760Z"/>
+                                 }
+                                 @else {
+                                    <path d="M620-163 450-333l56-56 114 114 226-226 56 56-282 282Zm220-397h-80v-200h-80v120H280v-120h-80v560h240v80H200q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h167q11-35 43-57.5t70-22.5q40 0 71.5 22.5T594-840h166q33 0 56.5 23.5T840-760v200ZM480-760q17 0 28.5-11.5T520-800q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800q0 17 11.5 28.5T480-760Z"/>
+                                 } 
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="vl-sb-c-div">
+                    <div class="code-content">
+                        <pre class="pre-code">
+                            <code id="vl-sb-div-code-html" class="language-html" data-lang="html">
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="fme"><</span>
+                                        <span class="db">div</span>
+                                        <span class="lb"> class</span>
+                                        <span class="fme">=</span>
+                                        <span class="o">"vl-sb-div"</span>
+                                        <span class="fme">></span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="fme"><</span>
+                                        <span class="db">div</span>
+                                        <span class="lb"> class</span>
+                                        <span class="fme">=</span>
+                                        <span class="o">"vl-sb-h-div"</span>
+                                        <span class="fme">></span>
+                                        <span class="fhe">Header</span>
+                                        <span class="fme"><</span>
+                                        <span class="fme">/</span>
+                                        <span class="db">div</span>
+                                        <span class="fme">></span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="fme"><</span>
+                                        <span class="db">div</span>
+                                        <span class="lb"> class</span>
+                                        <span class="fme">=</span>
+                                        <span class="o">"vl-sb-c-div"</span>
+                                        <span class="fme">></span>
+                                        <span class="fhe">Content</span>
+                                        <span class="fme"><</span>
+                                        <span class="fme">/</span>
+                                        <span class="db">div</span>
+                                        <span class="fme">></span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="fme"><</span>
+                                        <span class="db">div</span>
+                                        <span class="lb"> class</span>
+                                        <span class="fme">=</span>
+                                        <span class="o">"vl-sb-f-div"</span>
+                                        <span class="fme">></span>
+                                        <span class="fhe">Footer</span>
+                                        <span class="fme"><</span>
+                                        <span class="fme">/</span>
+                                        <span class="db">div</span>
+                                        <span class="fme">></span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="fme"><</span>
+                                        <span class="fme">/</span>
+                                        <span class="db">div</span>
+                                        <span class="fme">></span>
+                                    </span>
+                                </span>
+                            </code>
+                        </pre>
+                    </div>  
+                </div>
             </div>
-            <div class="vl-st-div">
-                <div class="vl-st-h-div">.scss</div>
-                <div class="vl-st-c-div">Content</div>
+            <div id="vl-sb-chapter-cd-02" class="vl-sb-div">
+                <div class="vl-sb-h-div">
+                    <div class="chapter-cd-title-div">
+                        <label class="chapter-cd-title-label">.scss</label>
+                        <button id="copy-02" 
+                                class="copy-button" 
+                                (click)="getCode('vl-sb-div-code-scss','copy-02')"
+                                title={{toopTipCopy}}>
+                            <svg class="copy-button-i"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 -960 960 960">
+                                 @if(!buttonsCodes['copy-02'])
+                                 {
+                                    <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h167q11-35 43-57.5t70-22.5q40 0 71.5 22.5T594-840h166q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560h-80v120H280v-120h-80v560Zm280-560q17 0 28.5-11.5T520-800q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800q0 17 11.5 28.5T480-760Z"/>
+                                 }
+                                 @else {
+                                    <path d="M620-163 450-333l56-56 114 114 226-226 56 56-282 282Zm220-397h-80v-200h-80v120H280v-120h-80v560h240v80H200q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h167q11-35 43-57.5t70-22.5q40 0 71.5 22.5T594-840h166q33 0 56.5 23.5T840-760v200ZM480-760q17 0 28.5-11.5T520-800q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800q0 17 11.5 28.5T480-760Z"/>
+                                 } 
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="vl-sb-c-div">
+                    <div class="code-content">
+                        <pre class="pre-code">
+                            <code id="vl-sb-div-code-scss" class="language-html" data-lang="html">
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="lb">$vl-sb-h-div-height</span>
+                                        <span class="fme">:</span>
+                                        <span class="g"> 30px</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="lb">$vl-sb-f-div-height</span>
+                                        <span class="fme">:</span>
+                                        <span class="g"> 30px</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="fme"></span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="y">.vl-sb-div</span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="y">&lbrace;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">height</span>
+                                        <span class="fme">:</span>
+                                        <span class="g"> 100%</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">width</span>
+                                        <span class="fme">:</span>
+                                        <span class="g"> 100%</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">display</span>
+                                        <span class="fme">:</span>
+                                        <span class="o"> flex</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">flex-direction</span>
+                                        <span class="fme">:</span>
+                                        <span class="o"> column</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">justify-content</span>
+                                        <span class="fme">:</span>
+                                        <span class="o"> center</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">align-items</span>
+                                        <span class="fme">:</span>
+                                        <span class="o"> center</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">gap</span>
+                                        <span class="fme">:</span>
+                                        <span class="g"> 0px</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="y">&rbrace;</span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="fme"></span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="y">.vl-sb-h-div</span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="y">&lbrace;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">height</span>
+                                        <span class="fme">:</span>
+                                        <span class="lb"> $vl-sb-h-div-height</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">width</span>
+                                        <span class="fme">:</span>
+                                        <span class="g"> 100%</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="y">&rbrace;</span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="fme"></span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="y">.vl-sb-c-div</span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="y">&lbrace;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">width</span>
+                                        <span class="fme">:</span>
+                                        <span class="g"> 100%</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">flex-grow</span>
+                                        <span class="fme">:</span>
+                                        <span class="g"> 1</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">overflow-y</span>
+                                        <span class="fme">:</span>
+                                        <span class="o"> hidden</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">overflow-x</span>
+                                        <span class="fme">:</span>
+                                        <span class="o"> hidden</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="y">&rbrace;</span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="fme"></span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="y">.vl-sb-f-div</span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="y">&lbrace;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">height</span>
+                                        <span class="fme">:</span>
+                                        <span class="lb"> $vl-sb-f-div-height</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-01">
+                                    <span class="cl">
+                                        <span class="lb">width</span>
+                                        <span class="fme">:</span>
+                                        <span class="g"> 100%</span>
+                                        <span class="fme">;</span>
+                                    </span>
+                                </span>
+                                <span class="line-00">
+                                    <span class="cl">
+                                        <span class="y">&rbrace;</span>
+                                    </span>
+                                </span>
+                            </code>
+                        </pre>
+                    </div>  
+                </div>
             </div>
         </div>
     </div>
@@ -31,6 +364,8 @@
         <div class="chapter-cd"></div>
     </div>
 </div>
+
+
 
 
 
