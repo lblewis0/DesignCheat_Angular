@@ -1,0 +1,131 @@
+@import "../../../app/shared/styles/colors.scss";
+@import "../../../app/shared/styles/fonts.scss";
+
+//Models----------------------------------------------------------------------------------------------------
+//VerticalNavigationBar-Div-----------------------------------------------------------------------------------
+$vnb-ul-height: 100%;
+$vnb-ul-width: 100%;
+$vnb-ul-gap: 10px;
+$vnb-ul-l-padding: 5px;
+$vnb-ul-r-padding: 5px;
+$vnb-ul-t-padding: 5px;
+$vnb-ul-b-padding: 5px;
+$vnb-ul-l-margin: 0px;
+$vnb-ul-r-margin: 0px;
+$vnb-ul-t-margin: 0px;
+$vnb-ul-b-margin: 0px;
+
+$vnb-ul-child-indent: 20px;
+
+$vnb-li-height: 30px;
+$vnb-li-width: 100%;
+$vnb-li-h-padding: 0px;
+$vnb-li-v-padding: 0px;
+$vnb-li-h-margin: 0px;
+$vnb-li-v-margin: 0px;
+
+.vnb-ul
+{
+    width: calc(100% - $vnb-ul-l-padding - $vnb-ul-r-padding);
+    height: calc(100% - $vnb-ul-t-padding - $vnb-ul-b-padding);
+    padding-left: $vnb-ul-l-padding;
+    padding-right: $vnb-ul-r-padding;
+    padding-top: $vnb-ul-t-padding;
+    padding-bottom: $vnb-ul-b-padding;
+    margin-left: $vnb-ul-l-margin;
+    margin-right: $vnb-ul-r-margin;
+    margin-top: $vnb-ul-t-margin;
+    margin-bottom: $vnb-ul-b-margin;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: $vnb-ul-gap;
+}
+
+.vnb-li-g
+{
+    height: fit-content;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.vnb-it-i-div
+{
+
+    height: $vnb-li-height;
+    border-bottom: 1px solid lightgrey;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    fill: $light-font-color-high-emphasis;
+}
+
+.vnb-it-i-div:hover
+{
+
+    fill: red;
+    color: red;
+}
+
+.vnb-it-i-div:active
+{
+    fill: blue;
+    color: blue;
+}
+
+.vnb-it-div
+{
+    height: $vnb-li-height;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.vnb-it-i
+{
+    height: 60%;
+}
+
+.vnb-it-a
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    flex-grow: 1;
+}
+
+//Childs div-ul ------------------------------------------------------------------------------------------------
+.vnb-it-ch-div
+{
+    width: calc($vnb-ul-width - $vnb-ul-child-indent);
+    padding: 0px;
+    margin: 0px;
+    padding-top: $vnb-ul-gap;
+    padding-left: $vnb-ul-child-indent;
+}
+
+.vnb-ul-c
+{
+    width: 100%;
+    height: fit-content;
+    list-style-type: none;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: $vnb-ul-gap;
+}
+
+
+

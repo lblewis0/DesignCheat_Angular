@@ -1,0 +1,122 @@
+@import './shared/styles/colors.scss';
+@import './shared/styles/fonts.scss';
+
+//Models----------------------------------------------------------------------------------------------------
+//VerticalLayout-StatusBar-Div------------------------------------------------------------------------------
+$vl-sb-div-height: 100%;
+$vl-sb-div-width: 100%;
+$vl-sb-h-div-height: 30px; //verticalLayout_statusBar_header-height
+$vl-sb-f-div-height: 30px; //footer-height
+
+.vl-sb-div
+{
+    height: 100%;
+    width: $vl-sb-div-width;
+    border: 1px solid $light-font-color-medium-emphasis;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.vl-sb-h-div
+{   
+    min-height: $vl-sb-h-div-height;
+    width: 100%;
+    background-color: $dark-theme-02;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border-bottom: 1px solid $light-font-color-medium-emphasis;
+}
+
+.vl-sb-c-div
+{
+    width: 100%;
+    background-color: $dark-theme-00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.vl-sb-f-div
+{
+    min-height: $vl-sb-f-div-height;
+    width: 100%;
+    background-color: $dark-theme-02;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border-top: 1px solid $light-font-color-medium-emphasis;
+}
+
+//VerticalLayout-List-Div-----------------------------------------------------------------------------------
+$vl-l-div-height: 100%;
+$vl-l-div-width: 100%;
+$vl-l-div-gap: 0px;
+$vl-l-div-h-padding: 0px;
+$vl-l-div-v-padding: 0px;
+$vl-l-div-h-margin: 0px;
+$vl-l-div-v-margin: 0px;
+
+.vl-l-div
+{
+    height: $vl-l-div-height;
+    width: $vl-l-div-width;
+    border: 1px solid $light-font-color-medium-emphasis;
+    padding-left: $vl-l-div-h-padding;
+    padding-right: $vl-l-div-h-padding;
+    padding-top: $vl-l-div-v-padding;
+    padding-bottom: $vl-l-div-v-padding;
+    margin-left: $vl-l-div-h-margin;
+    margin-right: $vl-l-div-h-margin;
+    margin-top: $vl-l-div-v-margin;
+    margin-bottom: $vl-l-div-v-margin;
+    gap: $vl-l-div-gap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+//HorizontalLayout-NavigationBar-Div------------------------------------------------------------------------
+$hl-nb-div-height: 100%;
+$hl-nb-div-width: 100%;
+$hl-nb-f-div-width: 300px;
+
+.hl-nb-div
+{
+    height: $hl-nb-div-height;
+    width: $hl-nb-div-width;
+    // border: 1px solid $light-font-color-medium-emphasis;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.hl-nb-f-div
+{   
+    height: 100%;
+    width: $hl-nb-f-div-width;
+    background-color: $dark-theme-03;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.hl-nb-v-div
+{
+    height: 100%;
+    background-color: $dark-theme-00;
+    flex-grow: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

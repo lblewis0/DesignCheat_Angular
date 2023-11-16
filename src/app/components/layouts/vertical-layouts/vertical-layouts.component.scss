@@ -1,0 +1,120 @@
+@import '../../../shared/styles/fonts.scss';
+@import '../../../shared/styles/colors.scss';
+
+.compenentNotDone
+{
+    padding: 10px;
+    background-color: $dark-theme-00;
+}
+
+$c-main-div-padding: 15px;
+
+.c-main-div
+{
+    min-height: calc(100% - 2*($c-main-div-padding));
+    height: fit-content;
+    width: calc(100% - 2*($c-main-div-padding));
+    background-color: $dark-theme-00;
+    color: $light-font-color-high-emphasis;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: $c-main-div-padding;
+
+}
+
+.chapter-div
+{
+    max-height: fit-content;
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.chapter-tt
+{
+    border: 1px solid yellow;
+    margin: 0px;
+}
+
+.chapter-ct
+{
+    border: 1px solid red;
+    margin: 0px;
+}
+
+.chapter-ex
+{
+    height: fit-content;
+    padding: 20px;
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    border: 1px solid green;
+}
+
+.chapter-cd
+{
+    height: fit-content;
+    width: 100%;
+    border: 1px solid blue;
+}
+
+
+//Models----------------------------------------------------------------------------------------------------
+$vl-st-div-height: 100%;
+$vl-st-div-width: 100%;
+$vl-st-h-div-height: 30px;
+$vl-st-f-div-height: 30px;
+
+.vl-st-div
+{
+    height: 200px;
+    width: $vl-st-div-width;
+    border: 1px solid $light-font-color-medium-emphasis;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.vl-st-h-div
+{   
+    height: $vl-st-h-div-height;
+    width: 100%;
+    background-color: $dark-theme-03;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $light-font-color-medium-emphasis;
+}
+
+.vl-st-c-div
+{
+    width: 100%;
+    background-color: $dark-theme-00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.vl-st-f-div
+{
+    height: $vl-st-f-div-height;
+    width: 100%;
+    background-color: $dark-theme-03;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $light-font-color-medium-emphasis;
+}

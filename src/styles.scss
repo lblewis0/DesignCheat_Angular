@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import './app/shared/styles/colors.scss';
+@import './app/shared/styles/fonts.scss';
+
+html
+{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    color: $light-font-color-medium-emphasis;
+    font-family: sans-serif;
+    line-height: 1.15;
+    overflow-x: hidden;
+}
+
+body
+{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+app-root
+{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
